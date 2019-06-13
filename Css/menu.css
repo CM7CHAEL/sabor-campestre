@@ -1,0 +1,79 @@
+
+#gkMainMenu {
+	padding: 0;
+	text-align: center;
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-ms-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+	width: 100%;
+}
+#gkMainMenu:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+#gkMainMenu .gkMenu {
+	display: block;
+	margin: 0;
+	position: relative;
+	text-align: center;
+}
+#gkMainMenuLeft {
+	float: left;
+	padding-right: 100px;
+	width: 50%;
+}
+#gkMainMenuRight {
+	float: right;
+	padding-left: 100px;
+	width: 50%;
+}
+
+#gkMainMenuLeft .gkMenu > ul {
+	text-align: left;
+}
+#gkMainMenuRight .gkMenu > ul {
+	text-align: right;
+}
+.gkMenu > ul > li {
+	clear: none!important;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	height: 80px;
+	line-height: 80px;
+	text-transform: uppercase;
+	width: auto;
+}
+
+
+.gkMenu > ul > li:first-child > a {
+	padding-left: 0;
+}
+.gkMenu > ul > li:last-child > a {
+	padding-right: 0;
+}
+.gkMenu > ul > li > a {
+	color: #2d2d2d;
+	display: block;
+	height: 80px;
+	line-height: 80px;
+	padding: 0 15px;
+	position: relative;
+}
+.gkMenu > ul > li > a:focus,
+.gkMenu > ul > li > a:hover,
+.gkMenu > ul > li.active > a:focus,
+.gkMenu > ul > li.active > a:hover {
+	color: #d27244;
+}
+
+.gkMenu > ul > li > .childcontent,
+.gkMenu > ul > li > .childcontent .childcontent {
+	position: absolute;
+	left: -999em;
+	z-index: 999;
+}
+
